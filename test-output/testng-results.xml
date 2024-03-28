@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-26T12:11:42 IST" name="PlusSurvey_Web_Application" finished-at="2024-03-26T12:11:53 IST" duration-ms="10854">
+    <groups>
+    </groups>
+    <test started-at="2024-03-26T12:11:42 IST" name="TC_001" finished-at="2024-03-26T12:11:53 IST" duration-ms="10854">
+      <class name="Login.TC_001">
+        <test-method is-config="true" signature="extendsReportsInstantiation(org.testng.ITestContext)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:42 IST" name="extendsReportsInstantiation" finished-at="2024-03-26T12:11:42 IST" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@647b9364]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendsReportsInstantiation -->
+        <test-method is-config="true" signature="browserInstantiation(java.lang.String,org.testng.ITestContext)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:42 IST" name="browserInstantiation" finished-at="2024-03-26T12:11:53 IST" duration-ms="10757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@647b9364]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInstantiation -->
+        <test-method signature="open_URL()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="open_URL" finished-at="2024-03-26T12:11:53 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_URL -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="checkStatus" finished-at="2024-03-26T12:11:53 IST" duration-ms="57" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=open_URL status=SUCCESS method=TC_001.open_URL()[pri:0, instance:Login.TC_001@d21a74c] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Login.TC_001.open_URL()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="closeBrowser" finished-at="2024-03-26T12:11:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="generateExtentReports" finished-at="2024-03-26T12:11:54 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReports -->
+      </class> <!-- Login.TC_001 -->
+    </test> <!-- TC_001 -->
+  </suite> <!-- PlusSurvey_Web_Application -->
+</testng-results>
