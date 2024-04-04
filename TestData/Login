@@ -1,1 +1,94 @@
-URL=N/A
+URL=http://dev.puls.accelyzei.com/account/login
+
+
+Welcome_to_PULS=Welcome to PULS
+
+
+login_page_message_text=Welcome to PULS
+Welcome_to_PULS_colour=rgb(84, 199, 240)
+Welcome_to_PULS_font_size=16.25px
+
+Username_text=Username
+Username_text_colour=rgb(73, 80, 87)
+Username_font_size=13px
+username_field_placeholder=Enter username
+
+Psssword_text=Password
+Psssword_text_colour=rgb(73, 80, 87)
+Psssword_font_size=13px
+Psssword_field_placeholder=Enter password
+
+Login_button_colour=rgb(84, 199, 240)
+Login_button_font_size=13px
+
+Forgot_password_text=Forgot your password?
+Forgot_password_text_colour=rgb(116, 120, 141)
+Forgot_password_font_size=13px
+
+Css_color=color
+Css_font_size=font-size
+<---------------------------Test Data------------------------->
+
+!---------------valid credentials-----------------!
+valid_username=admin@accelyzei.com
+valid_password=admin
+!---------------valid credentials-----------------!
+
+!---------------Invalid credentials-----------------!
+invalid_username=QA
+invalid_password=test123
+
+!---------------Invalid credentials along with spaces-----------------!
+invalid_username_with_spaces=  123QA@gmail.com
+invalid_password_with_spaces=  12345
+
+!---------------Validations-----------------!
+Invalid_Credentials=Invalid Credentials
+Username_required=Username is required
+Password_required=Password is required
+username_must_valid=Username must be valid
+!---------------Validations-----------------!
+
+
+
+
+!---------------Forgot Password-----------------!
+forgotPassword_page_title=Forgot Password
+forgotPassword_page_title_colour=rgb(84, 199, 240)
+Email_text_field_title=Email
+Email_text_field_placeholder=Enter Email
+Email_text_field_colour=rgb(73, 80, 87)
+Email_text_field_fontsize=13px
+!---------------Forgot Password-----------------!
+
+
+
+
+!---------------Reset Password-----------------!
+ResetPassword_page_title=Reset Password
+ResetPassword_page_title_colour=rgb(84, 199, 240)
+ResetPassword_page_title_size=16.25px
+New_Password_title=New Password
+New_Password_title_colour=rgb(73, 80, 87)
+New_Password_title_text_size=13px
+Confirm_Password_title=Confirm Password
+Confirm_Password_title_colour=rgb(73, 80, 87)
+Confirm_Password_title_text_size=13px
+OTP_title=OTP
+OTP_title_colour=rgb(73, 80, 87)
+OTP_title_text_size=13px
+New_Password_placeholder=Enter New Password
+Confirm_Password_placeholder=Confirm New Password
+OTP_placeholder=Enter OTP
+
+different_new_password=1234
+different_confirm_password=4321
+
+
+new_password_with_spacess=   123456
+confirm_password_with_spacess=   1234567
+OTP_with_spacess=  4567
+!---------------Reset Password-----------------!
+
+
+

@@ -1,0 +1,13 @@
+Customer_Email=rajesh.bandaru@accelyzei.com
+Action_button_size=13px
+Action_button_colour=rgb(84, 199, 240)
+
+CSS_Action_button_key_size=font-size
+CSS_Action_button_Key_Colour=background-color
+
+Action_Dropdown_list_Edit_Customer=Edit Customer
+Action_Dropdown_list_Basic_Info=Basic Info
+Action_Dropdown_list_Stores=Stores
+Action_Dropdown_list_Study_Types=Study Types
+Action_Dropdown_list_Surveys=Surveys
+Action_Dropdown_list_Deactivate=Deactivate

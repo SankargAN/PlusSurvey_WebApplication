@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T12:11:42 IST" name="PlusSurvey_Web_Application" finished-at="2024-03-26T12:11:53 IST" duration-ms="10854">
+  <suite started-at="2024-04-04T08:40:39 IST" name="PulsSurvey" finished-at="2024-04-04T08:41:50 IST" duration-ms="70501">
     <groups>
     </groups>
-    <test started-at="2024-03-26T12:11:42 IST" name="TC_001" finished-at="2024-03-26T12:11:53 IST" duration-ms="10854">
-      <class name="Login.TC_001">
-        <test-method is-config="true" signature="extendsReportsInstantiation(org.testng.ITestContext)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:42 IST" name="extendsReportsInstantiation" finished-at="2024-03-26T12:11:42 IST" duration-ms="233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@647b9364]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extendsReportsInstantiation -->
-        <test-method is-config="true" signature="browserInstantiation(java.lang.String,org.testng.ITestContext)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:42 IST" name="browserInstantiation" finished-at="2024-03-26T12:11:53 IST" duration-ms="10757" status="PASS">
+    <test started-at="2024-04-04T08:40:39 IST" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001" finished-at="2024-04-04T08:40:55 IST" duration-ms="15285">
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <test-method is-config="true" signature="browserInstantiation(java.lang.String,org.testng.ITestContext)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:39 IST" name="browserInstantiation" finished-at="2024-04-04T08:40:43 IST" duration-ms="3993" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,42 +16,400 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@647b9364]]>
+                <![CDATA[org.testng.TestRunner@102c18e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInstantiation -->
-        <test-method signature="open_URL()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="open_URL" finished-at="2024-03-26T12:11:53 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:43 IST" name="implicity_Wait" finished-at="2024-04-04T08:40:43 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_URL -->
-        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="checkStatus" finished-at="2024-03-26T12:11:53 IST" duration-ms="57" status="PASS">
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:43 IST" name="login" finished-at="2024-04-04T08:40:48 IST" duration-ms="4983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:48 IST" name="checkStatus" finished-at="2024-04-04T08:40:49 IST" duration-ms="363" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=open_URL status=SUCCESS method=TC_001.open_URL()[pri:0, instance:Login.TC_001@d21a74c] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_001.login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public static void Login.TC_001.open_URL()]]>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.login()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="closeBrowser" finished-at="2024-03-26T12:11:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:49 IST" name="implicity_Wait" finished-at="2024-04-04T08:40:49 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:49 IST" name="customer_Page" finished-at="2024-04-04T08:40:50 IST" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Page -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:50 IST" name="checkStatus" finished-at="2024-04-04T08:40:50 IST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Page status=SUCCESS method=TC_001.customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.customer_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:50 IST" name="implicity_Wait" finished-at="2024-04-04T08:40:50 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:50 IST" name="action_Button" finished-at="2024-04-04T08:40:54 IST" duration-ms="4224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- action_Button -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:54 IST" name="checkStatus" finished-at="2024-04-04T08:40:54 IST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=action_Button status=SUCCESS method=TC_001.action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.action_Button() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@6a2b953e]" started-at="2024-04-04T08:40:54 IST" name="closeBrowser" finished-at="2024-04-04T08:40:55 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:Login.TC_001@d21a74c]" started-at="2024-03-26T12:11:53 IST" name="generateExtentReports" finished-at="2024-03-26T12:11:54 IST" duration-ms="303" status="PASS">
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+    </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+    <test started-at="2024-04-04T08:40:55 IST" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002" finished-at="2024-04-04T08:41:09 IST" duration-ms="14542">
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002">
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002@53aad5d5]" started-at="2024-04-04T08:41:09 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:09 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="action_button_colour_size()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002@53aad5d5]" started-at="2024-04-04T08:41:09 IST" name="action_button_colour_size" finished-at="2024-04-04T08:41:09 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- action_button_colour_size -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002@53aad5d5]" started-at="2024-04-04T08:41:09 IST" name="checkStatus" finished-at="2024-04-04T08:41:09 IST" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=action_button_colour_size status=SUCCESS method=TC_002.action_button_colour_size()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002@53aad5d5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002.action_button_colour_size()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002 -->
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <test-method is-config="true" signature="browserInstantiation(java.lang.String,org.testng.ITestContext)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:40:55 IST" name="browserInstantiation" finished-at="2024-04-04T08:40:57 IST" duration-ms="2521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@26e0d39c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInstantiation -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:40:57 IST" name="implicity_Wait" finished-at="2024-04-04T08:40:57 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:40:57 IST" name="login" finished-at="2024-04-04T08:41:02 IST" duration-ms="5286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:02 IST" name="checkStatus" finished-at="2024-04-04T08:41:03 IST" duration-ms="194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_001.login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:03 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:03 IST" name="customer_Page" finished-at="2024-04-04T08:41:04 IST" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Page -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:04 IST" name="checkStatus" finished-at="2024-04-04T08:41:04 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Page status=SUCCESS method=TC_001.customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.customer_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:04 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:04 IST" name="action_Button" finished-at="2024-04-04T08:41:08 IST" duration-ms="4255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- action_Button -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:08 IST" name="checkStatus" finished-at="2024-04-04T08:41:09 IST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=action_Button status=SUCCESS method=TC_001.action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.action_Button() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@41c2284a]" started-at="2024-04-04T08:41:09 IST" name="closeBrowser" finished-at="2024-04-04T08:41:09 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+    </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002 -->
+    <test started-at="2024-04-04T08:41:09 IST" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003" finished-at="2024-04-04T08:41:50 IST" duration-ms="40650">
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003">
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003@5f683daf]" started-at="2024-04-04T08:41:23 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="customer_Actions_List()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003@5f683daf]" started-at="2024-04-04T08:41:23 IST" name="customer_Actions_List" finished-at="2024-04-04T08:41:49 IST" duration-ms="26495" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Stores] but found [Location],
+expected [Study Types] but found [Sub Type],
+expected [Surveys] but found [Survey]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Stores] but found [Location],
+expected [Study Types] but found [Sub Type],
+expected [Surveys] but found [Survey]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003.customer_Actions_List(TC_003.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Actions_List -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003@5f683daf]" started-at="2024-04-04T08:41:49 IST" name="checkStatus" finished-at="2024-04-04T08:41:50 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Actions_List status=FAILURE method=TC_003.customer_Actions_List()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003@5f683daf] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003.customer_Actions_List() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003 -->
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <test-method is-config="true" signature="extendsReportsInstantiation(org.testng.ITestContext)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:40:39 IST" name="extendsReportsInstantiation" finished-at="2024-04-04T08:40:39 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a84788f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendsReportsInstantiation -->
+        <test-method is-config="true" signature="browserInstantiation(java.lang.String,org.testng.ITestContext)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:09 IST" name="browserInstantiation" finished-at="2024-04-04T08:41:12 IST" duration-ms="2700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a84788f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInstantiation -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:12 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:12 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:12 IST" name="login" finished-at="2024-04-04T08:41:17 IST" duration-ms="5088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:17 IST" name="checkStatus" finished-at="2024-04-04T08:41:17 IST" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_001.login()[pri:1, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:17 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:17 IST" name="customer_Page" finished-at="2024-04-04T08:41:18 IST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Page -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:18 IST" name="checkStatus" finished-at="2024-04-04T08:41:18 IST" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=customer_Page status=SUCCESS method=TC_001.customer_Page()[pri:2, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.customer_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="implicity_Wait()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:18 IST" name="implicity_Wait" finished-at="2024-04-04T08:41:18 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implicity_Wait -->
+        <test-method signature="action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:18 IST" name="action_Button" finished-at="2024-04-04T08:41:23 IST" duration-ms="4178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- action_Button -->
+        <test-method is-config="true" signature="checkStatus(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:23 IST" name="checkStatus" finished-at="2024-04-04T08:41:23 IST" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=action_Button status=SUCCESS method=TC_001.action_Button()[pri:3, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public static void Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001.action_Button() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:50 IST" name="closeBrowser" finished-at="2024-04-04T08:41:50 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="generateExtentReports(org.testng.ITestContext)[pri:0, instance:Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001@4a668b6e]" started-at="2024-04-04T08:41:50 IST" name="generateExtentReports" finished-at="2024-04-04T08:41:50 IST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a84788f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReports -->
-      </class> <!-- Login.TC_001 -->
-    </test> <!-- TC_001 -->
-  </suite> <!-- PlusSurvey_Web_Application -->
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+    </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003 -->
+  </suite> <!-- PulsSurvey -->
 </testng-results>

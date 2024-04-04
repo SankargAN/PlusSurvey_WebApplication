@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PulsSurvey">
+	<parameter name="browserName" value="edge" />
+	<parameter name="author" value="Rajesh" />
+	<test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+		<classes>
+			<class
+				name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002">
+		<classes>
+			<class
+				name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001" />
+			<class
+				name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003">
+		<classes>
+			<class
+				name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001" />
+			<class
+				name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003" />
+		</classes>
+	</test> <!--
+	Customer_ListPage_ActionsDesign_Sprint_1_803168 -->
+</suite> <!--
+PulsServey -->

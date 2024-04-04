@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PulsServey]" guice-stage="DEVELOPMENT">
+  <parameter name="author" value="Rajesh"/>
+  <parameter name="browserName" value="edge"/>
+  <test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001(failed)">
+    <classes>
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <methods>
+          <include name="browserInstantiation"/>
+          <include name="closeBrowser"/>
+          <include name="checkStatus"/>
+          <include name="action_Button"/>
+          <include name="login"/>
+          <include name="generateExtentReports"/>
+          <include name="implicity_Wait"/>
+          <include name="extendsReportsInstantiation"/>
+          <include name="customer_Page"/>
+        </methods>
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+    </classes>
+  </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001(failed) -->
+  <test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002(failed)">
+    <classes>
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <methods>
+          <include name="browserInstantiation"/>
+          <include name="checkStatus"/>
+          <include name="action_Button"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="implicity_Wait"/>
+          <include name="generateExtentReports"/>
+          <include name="extendsReportsInstantiation"/>
+          <include name="customer_Page"/>
+        </methods>
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002">
+        <methods>
+          <include name="browserInstantiation"/>
+          <include name="checkStatus"/>
+          <include name="closeBrowser"/>
+          <include name="action_button_colour_size"/>
+          <include name="generateExtentReports"/>
+          <include name="implicity_Wait"/>
+          <include name="extendsReportsInstantiation"/>
+        </methods>
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002 -->
+    </classes>
+  </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_002(failed) -->
+  <test thread-count="5" name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003(failed)">
+    <classes>
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001">
+        <methods>
+          <include name="browserInstantiation"/>
+          <include name="checkStatus"/>
+          <include name="action_Button"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="implicity_Wait"/>
+          <include name="generateExtentReports"/>
+          <include name="extendsReportsInstantiation"/>
+          <include name="customer_Page"/>
+        </methods>
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_001 -->
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003">
+        <methods>
+          <include name="browserInstantiation"/>
+          <include name="closeBrowser"/>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+          <include name="implicity_Wait"/>
+          <include name="extendsReportsInstantiation"/>
+          <include name="customer_Actions_List"/>
+        </methods>
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003 -->
+    </classes>
+  </test> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003(failed) -->
+</suite> <!-- Failed suite [PulsServey] -->

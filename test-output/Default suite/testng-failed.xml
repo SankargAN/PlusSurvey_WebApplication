@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Login.TC_001">
+      <class name="Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003">
         <methods>
           <include name="browserInstantiation"/>
-          <include name="checkStatus"/>
           <include name="closeBrowser"/>
+          <include name="checkStatus"/>
           <include name="generateExtentReports"/>
+          <include name="implicity_Wait"/>
           <include name="extendsReportsInstantiation"/>
-          <include name="open_URL"/>
+          <include name="customer_Actions_List"/>
         </methods>
-      </class> <!-- Login.TC_001 -->
+      </class> <!-- Customer_ListPage_ActionsDesign_Sprint_1_803168.TC_003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

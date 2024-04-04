@@ -19,20 +19,26 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import POM.Customers;
+import POM.Login;
+import Properties.customerPage;
 import Properties.loginpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -47,15 +53,26 @@ public class BaseClass {
 	public static Alert alert;
 	public static Select select;
 	public static String screenshotPath = null;
-	public static loginpage loginPage_PRO;
+	public static loginpage loginPage_Pro;
+	public static Login login_Pom;
+	public static SoftAssert softassert;
+	public static customerPage customerPage_Pro;
+	public static Customers customer_Pom;
 	@BeforeSuite
 	public void extendsReportsInstantiation(ITestContext context) {
+		//Object creating for Loginpage properties
+		loginPage_Pro = new loginpage();
+		
 		testSuiteName = context.getSuite().getName();
 		testCaseName = context.getCurrentXmlTest().getName();
 
 		extentReports = new ExtentReports();
 		sparkRepoter = new ExtentSparkReporter(System.getProperty("user.dir")+"/ExtentReports/"+testSuiteName+"/"+testCaseName+"/"+testCaseName+timeStamp()+".html");
 		extentReports.attachReporter(sparkRepoter);
+		//System Environment
+		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
+		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
+		extentReports.setSystemInfo("Website URL", loginPage_Pro.URL());
 	}
 
 	@Parameters("browserName")
@@ -74,35 +91,43 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		//Object Creating for Actions class
 		action = new Actions(driver);
-		
-		//Object creating for Loginpage properties
-		loginPage_PRO = new loginpage();
 
+		//Object creating for Loginpage properties
+		loginPage_Pro = new loginpage();
+
+		login_Pom=PageFactory.initElements(driver, Login.class);
+		customer_Pom=PageFactory.initElements(driver, Customers.class);
+		softassert= new SoftAssert();
+		customerPage_Pro = new customerPage();
+		
 		//Object for Capabilities
 		Capabilities capablity = ((RemoteWebDriver)driver).getCapabilities();
 		String device = capablity.getBrowserName()+" "+capablity.getBrowserVersion().substring(0,capablity.getBrowserVersion().indexOf("."));
 		String author = context.getCurrentXmlTest().getParameter("author");
 
-		//System Environment
-		extentReports.setSystemInfo("OS", System.getProperty("os.name"));
-		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
-		extentReports.setSystemInfo("Website URL", "N/A");
+
 
 		//Create test in Reports
 		extentTest=extentReports.createTest(context.getName(), "Subject Diary Admin Role");
 		extentTest.assignAuthor(author);
 		extentTest.assignDevice(device);
 
-	}
 
+		implicit_wait(5);
+
+	}
+	@BeforeMethod
+	public void implicity_Wait() {
+		implicit_wait(5);
+	}
 	@AfterMethod
 	public void checkStatus(ITestResult result, java.lang.reflect.Method m) throws Exception {
 		//status Checking
 		testCaseName = result.getTestContext().getName();
 		if(result.getStatus()==ITestResult.SUCCESS) {
 			extentTest.pass(m.getName() + " is pass");
-			//			screenshotPath = captureScrrenshotPath(result.getTestContext().getName()+"-"+result.getMethod().getMethodName());
-			//			extentTest.addScreenCaptureFromPath(screenshotPath);
+			//screenshotPath = captureScrrenshotPath(result.getTestContext().getName()+"-"+result.getMethod().getMethodName());
+			//extentTest.addScreenCaptureFromPath(screenshotPath);
 		}else if (result.getStatus()==ITestResult.FAILURE) {
 			screenshotPath = captureScrrenshotPath(result.getTestContext().getName()+"-"+result.getMethod().getMethodName());
 			extentTest.addScreenCaptureFromPath(screenshotPath);
@@ -113,15 +138,18 @@ public class BaseClass {
 		extentTest.assignCategory(m.getAnnotation(org.testng.annotations.Test.class).groups());
 		File jsonfile = new File(System.getProperty("user.dir")+"/Resources/extent-reports-config.json");
 		sparkRepoter.loadJSONConfig(jsonfile);
+		implicit_wait(5);
 	}
 	@AfterTest
 	//close the browser
 	public void closeBrowser() {
-		//driver.close();
+		driver.close();
 	}
 	@AfterSuite
-	public void generateExtentReports() {
+	public void generateExtentReports(ITestContext context) {
+
 		extentReports.flush();
+
 	}
 	//ExtentInfo
 	public static void extentInfo(String info) {
@@ -160,11 +188,20 @@ public class BaseClass {
 	public static String getText(WebElement element) {
 		return element.getText();	
 	}
+	// Set the implicit wait time to 10 seconds
 	public static void implicit_wait(int Seconds) {
-
-		// Set the implicit wait time to 10 seconds
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Seconds));
+	}
 
+	// get attributes(placeholder)
+	public static String getAttributes(WebElement element) {
+		String attribute =element.getAttribute("placeholder");
+
+		return attribute;
+	}
+	//get cssValue
+	public static String getCssValue(WebElement element, String cssValue) {
+		return element.getCssValue(cssValue);	
 	}
 	//----------------------------------Alert--------------------------------------------------->
 	//alertAccept
